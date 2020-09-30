@@ -1,6 +1,12 @@
 import sys
 from tkinter import *
 
+import ctypes
+
+# changing the system DPI awareness
+ctypes.windll.shcore.SetProcessDpiAwareness(1)
+
+
 myApp = Tk()
 myApp.title('My App')
 
